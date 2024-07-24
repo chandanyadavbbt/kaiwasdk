@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>KAIWA SDK</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa; /* Light gray background */
+            color: #333; /* Dark text color */
+        }
+
+        .navbar {
+            height: 100px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-weight: 900;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            background-color: #ffffff; /* White background */
+        }
+
+        .navbar h1 {
+            font-size: 1.5em;
+            color: #007bff; /* Blue color for logo */
+        }
+
+        .right-side {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 350px;
+        }
+
+        .right-side p {
+            font-weight: 500;
+            cursor: pointer;
+            color: #333;
+            margin-right: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .right-side p:hover {
+            color: #007bff; /* Blue color on hover */
+        }
+
+        /* Button styles */
+        button {
+            background-color: #007bff; /* Blue color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            box-shadow: 0 4px 12px rgba(0, 91, 187, 0.4); /* Blue shadow on hover */
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Outline for accessibility */
+        }
+
+        button:active {
+            background-color: #004494; /* Even darker blue on click */
+        }
+        .hero{
+            margin: 50px;
+            padding: 50px;
+        }
+        .hero p{
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <section id="main">
+        <div class="navbar">
+            <h1>KAIWA AI</h1>
+            <div class="right-side">
+                <p>DOCS</p>
+                <button>Get In Touch</button>
+            </div>
+        </div>
+        <div class="hero">
+            <img src="./src/hero.svg" alt="" width="300px" height="300px">
+            <p>Get your AI chat bot instantly</p>
+        </div>
+        <!-- <img src="./src/dddepth-322.jpg" width="300px" height="300px"/> -->
+    </section>
+    
+    <div id="kaiwaai" headerColor="" name="DataStory Hub" data-header-value="YourHeaderValue"></div>
+    <script src="./dist/main.js"></script>
+</body>
+</html>
